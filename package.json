@@ -1,0 +1,13 @@
+{
+  "name": "Grigori-Bot",
+  "version": "0.1.0",
+  "description": "STIMulate and Dragons discord bot",
+  "main": "bot.js",
+  "repository": "git@github.com:LordDeimos/Grigori-Bot.git",
+  "author": "Alex <alexjbarnier@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
+}
