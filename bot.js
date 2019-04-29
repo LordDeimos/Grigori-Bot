@@ -14,9 +14,7 @@ client.on('message',msg=>{
         msg.react('🐺').catch(console.error);
     }
     else if(msg.content.match(/<@572235311351070720>/g)){        
-        msg.reply("I am best werewolf hunter in all Barovia!").catch((error)=>{
-            console.error(error);
-        });
+        msg.reply("I am best werewolf hunter in all Barovia!").catch(console.error);
     }
     else if(msg.content.match(/🐺([\w]*)/)!==null){
         switch(msg.content.match(/🐺([\w]*)/)[1]){
