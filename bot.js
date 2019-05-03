@@ -10,13 +10,13 @@ client.on('message',msg=>{
     if(msg.author.username===client.user.username){
         return;
     }
-    if (msg.content.match(/[Gg]rigori/)!==null) {
+    if((Math.random()%10)%2===0 || msg.content.match(/[Gg]rigori/)) {
         msg.react('🐺').catch(console.error);
     }
     else if(msg.content.match(/<@572235311351070720>/g)){        
         msg.reply("I am best werewolf hunter in all Barovia!").catch(console.error);
     }
-    else if(msg.content.match(/🐺([\w]*)/)!==null){
+    else if(msg.content.match(/🐺([\w]*)/)){
         switch(msg.content.match(/🐺([\w]*)/)[1]){
             case "github":
                 msg.channel.send("https://github.com/LordDeimos/Grigori-Bot").catch(console.error);
